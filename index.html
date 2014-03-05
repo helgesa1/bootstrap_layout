@@ -15,7 +15,7 @@
         margin:0 auto;
       }
       
-      .container:first-child, article, aside, .pagefooter {
+      .pageheader, nav, article, aside, .pagefooter {
         border:1px solid #000;
       }
       
@@ -33,16 +33,20 @@
   </head>
   <body>
     <div class="container">
-      <header>
-        <h1>This is My Bootstrap Layout</h1>
-      </header>
-      <nav>
-        <ul>
-          <li>home</li>
-          <li>about</li>
-          <li>contact</li>
-        </ul>
+      <div class="row">
+        <header class="pageheader col-md-12">
+          <h1>This is My Bootstrap Layout</h1>
+        </header>
+      </div>
+      <div class="row">
+        <nav class="col-md-12">
+          <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>contact</li>
+          </ul>
       </nav>
+      </div>
       <div class="row">
         <article class="col-md-8">
           <header>
@@ -61,9 +65,12 @@
           </ul>
         </aside>
       </div>
-      <footer class="pagefooter">
-        <p>Here's my footer stuff</p>
-      </footer>
+      <div class="row">      
+        <footer class="pagefooter col-md-12">
+          <p>Here's my footer stuff</p>
+        </footer>
+      </div>
+
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
